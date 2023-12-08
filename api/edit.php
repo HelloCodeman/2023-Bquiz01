@@ -1,4 +1,4 @@
-<?
+<?php
 include_once "db.php";
 
 $table = $_POST['table'];
@@ -16,4 +16,4 @@ foreach ($_POST['text'] as $id => $text) {
     }
 }
 
-to("../admin.php?do-$table");
+to("../admin.php?do=$table");

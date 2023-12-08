@@ -16,7 +16,9 @@
             <tbody>
                 <tr>
                     <td width="200px"></td>
-                    <td class="cent"><input type="submit" value="修改確定"><input type="reset" value="重置"></td>
+                    <td class="cent">
+                        <input type="submit" value="修改確定"><input type="reset" value="重置">
+                    </td>
                 </tr>
             </tbody>
         </table>

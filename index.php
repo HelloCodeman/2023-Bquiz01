@@ -1,12 +1,10 @@
 <?php include_once "./api/db.php" ?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0040)http://127.0.0.1/test/exercise/collage/? -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 	<title>卓越科技大學校園資訊系統</title>
 	<link href="./css/css.css" rel="stylesheet" type="text/css">
 	<script src="./js/jquery-1.9.1.min.js"></script>
@@ -20,10 +18,14 @@
 			<div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
 		</div>
 	</div>
-	<iframe style="display:none;" name="back" id="back"></iframe>
 	<div id="main">
-		<a title="" href="./home_files/home.htm">
-			<div class="ti" style="background:url(&#39;use/&#39;); background-size:cover;"></div><!--標題-->
+		<?php
+		$title = $Title->find(['display' => 1]);
+		?>
+		<a title="<?= $title['text']; ?>" href="index.php">
+			<div class="ti" style="background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover;">
+			</div>
+			<!--標題-->
 		</a>
 		<div id="ms">
 			<div id="lf" style="float:left;">
