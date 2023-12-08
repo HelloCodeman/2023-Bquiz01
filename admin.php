@@ -28,39 +28,39 @@
 				<div id="menuput" class="dbor">
 					<!--主選單放此-->
 					<span class="t botli">後台管理選單</span>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=title">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=title">
 						<div class="mainmu">
 							網站標題管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=ad">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=ad">
 						<div class="mainmu">
 							動態文字廣告管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=mvim">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=mvim">
 						<div class="mainmu">
 							動畫圖片管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=image">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=image">
 						<div class="mainmu">
 							校園映象資料管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=total">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=total">
 						<div class="mainmu">
 							進站總人數管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=bottom">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=bottom">
 						<div class="mainmu">
 							頁尾版權資料管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=news">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=news">
 						<div class="mainmu">
 							最新消息資料管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=admin">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=admin">
 						<div class="mainmu">
 							管理者帳號管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=menu">
+					<a style="color:#000; font-size:13px; text-decoration:none; text-align:center" href="?do=menu">
 						<div class="mainmu">
 							選單管理 </div>
 					</a>
