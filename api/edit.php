@@ -11,7 +11,11 @@ foreach ($_POST['text'] as $id => $text) {
     } else {
         $row = $DB->find($id);
         $row['text'] = $text;
-        $row['display'] = (isset($_POST['display']) && $_POST['display'] == $id) ? 1 : 0;
+        if ($table == 'title') {
+            $row['display'] = (isset($_POST['display']) && $_POST['display'] == $id) ? 1 : 0;
+        } else {
+            $row['display'] = (isset($_POST['display']) && in_array($id, $_POST['display'])) ? 1 : 0;
+        }
         $DB->save($row);
     }
 }

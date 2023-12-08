@@ -9,6 +9,8 @@ if (isset($_FILES['img']['tmp_name'])) {
     $_POST['img'] = $_FILES['img']['name'];
 }
 
+$_POST['display'] = ($table == 'title') ? 0 : 1;
+
 unset($_POST['table']);
 $DB->save($_POST);
 
