@@ -4,7 +4,9 @@
         <table style="width:50%;margin:auto">
             <tr class="yel">
                 <td width="50%">進站總人數</td>
-                <td width="50%"><input type="number" name="total" value="<?= $Total->find(1)['total']; ?>"></td>
+                <td width="50%">
+                    <input type="number" name="total" value="<?= $Total->find(1)['total']; ?>">
+                </td>
             </tr>
         </table>
         <table style="margin-top:40px; width:70%;">
