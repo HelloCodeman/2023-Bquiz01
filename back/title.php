@@ -21,10 +21,10 @@
                         <td width="23%">
                             <input type="text" name="text[<?= $row['id']; ?>]" style="width:90%" value="<?= $row['text']; ?>">
                         </td>
-                        <td width="7%"><input type="radio" name="display" value="<?= $row['id']; ?>"></td>
+                        <td width="7%"> <input type="radio" name="display" value="<?= $row['id']; ?>" <?= ($row['display'] == 1) ? 'checked' : ''; ?>></td>
                         <td width="7%"><input type="checkbox" name="del[]" value="<?= $row['id']; ?>"></td>
                         <td>
-                            <input type="button" onclick="op('#cover','#cvr'.'./modal/upload.php?table=<?= $do; ?>&id=<?= $row['id']; ?>')" value="更新圖片">
+                            <input type="button" onclick="op('#cover','#cvr','./modal/upload.php?table=<?= $do; ?>&id=<?= $row['id']; ?>')" value="更新圖片">
                         </td>
                     </tr>
                 <?php
