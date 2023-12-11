@@ -12,7 +12,7 @@
         </tr>
         <tr>
             <td>確認密碼：</td>
-            <td><input type="password" name="ckeckpw" id=""></td>
+            <td><input type="password" name="checkpw" id=""></td>
         </tr>
     </table>
     <div>

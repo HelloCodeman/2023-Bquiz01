@@ -14,11 +14,11 @@
                 ?>
                     <tr>
                         <td>
-                            <input type="text" name="acc[]" style="width:90%" value="<?= $row['text']; ?>">
-                            <input type="hidden" name="id[]" value="<?= ['text']; ?>">
+                            <input type="text" name="acc[]" style="width:90%" value="<?= $row['acc']; ?>">
+                            <input type="hidden" name="id[]" value="<?= ['id']; ?>">
                         </td>
                         <td>
-                            <input type="password" name="pw[]" value="<?= $row['id']; ?>">
+                            <input type="password" name="pw[]" value="<?= $row['pw']; ?>">
                         </td>
                         <td>
                             <input type="checkbox" name="del[]" value="<?= $row['id']; ?>">

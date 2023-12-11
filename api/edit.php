@@ -22,6 +22,8 @@ foreach ($_POST['text'] as $id => $text) {
         $row['text'] = $text;
         if ($table == 'title') {
             $row['display'] = (isset($_POST['display']) && $_POST['display'] == $id) ? 1 : 0;
+        } elseif ($table == 'admin') {
+            unset($_POST['display']);
         } else {
             $row['display'] = (isset($_POST['display']) && in_array($id, $_POST['display'])) ? 1 : 0;
         }
