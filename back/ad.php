@@ -9,7 +9,7 @@
                     <td width="10%">刪除</td>
                 </tr>
                 <?php
-                $rows = $Ad->all();
+                $rows = $DB->all();
                 foreach ($rows as $row) {
                 ?>
                     <tr>
