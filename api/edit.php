@@ -30,6 +30,8 @@ foreach ($_POST['id'] as  $key => $id) {
                 $row['pw'] = $_POST['pw'][$key];
                 break;
             case "menu":
+                $row['href'] = $_POST['href'][$key];
+                $row['display'] = (isset($_POST['display']) && in_array($id, $_POST['display'])) ? 1 : 0;
                 break;
             default:
                 $row['display'] = (isset($_POST['display']) && in_array($id, $_POST['display'])) ? 1 : 0;
