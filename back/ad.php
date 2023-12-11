@@ -15,6 +15,7 @@
                     <tr>
                         <td>
                             <input type="text" name="text[<?= $row['id']; ?>]" style="width:90%" value="<?= $row['text']; ?>">
+                            <input type="hidden" name="id[]" value="<?= $row['id']; ?>">
                         </td>
                         <td>
                             <input type="checkbox" name="display[]" value="<?= $row['id']; ?>" <?= ($row['display'] == 1) ? 'checked' : ''; ?>>
