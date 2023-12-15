@@ -16,13 +16,15 @@ if (isset($_POST['id'])) {
 
 if (isset($_POST['add_text'])) {
     foreach ($_POST['add_text'] as $idx => $text) {
-        $data = [];
-        $data['text'] = $text;
-        $data['href'] = $_POST['href'][$idx];
-        $data['display'] = 1;
-        $data['menu_id'] = $_POST['menu_id'];
+        if ($text != "") {   // 最後要檢驗是否為空值
+            $data = [];
+            $data['text'] = $text;
+            $data['href'] = $_POST['href'][$idx];
+            $data['display'] = 1;
+            $data['menu_id'] = $_POST['menu_id'];
 
-        $Menu->save($data);
+            $Menu->save($data);
+        }
     }
 }
 
