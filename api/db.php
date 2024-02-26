@@ -140,7 +140,7 @@ class DB
     function check($arg)
     {
         $arg = htmlspecialchars($arg);
-        return;
+        return $arg;
     }
 }
 
