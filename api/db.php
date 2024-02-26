@@ -110,6 +110,8 @@ class DB
     private function a2s($array)
     {
         foreach ($array as $col => $value) {
+            //檢查變數是否有特殊符號
+            $value = $this->check($value);
             $tmp[] = "`$col`='$value'";
         }
         return $tmp;
@@ -134,6 +136,11 @@ class DB
             // $rows = $this->pdo->query($sql)->fetchColumn();
             return $sql;
         }
+    }
+    function check($arg)
+    {
+        $arg = htmlspecialchars($arg);
+        return;
     }
 }
 
